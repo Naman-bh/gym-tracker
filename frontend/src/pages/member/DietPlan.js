@@ -7,7 +7,6 @@ export default function DietPlan() {
   const { user } = useAuth();
 
   const baseWeight = user?.weightKg || 70;
-  const goal = "Maintain";
 
   const calories = Math.round(baseWeight * 30);
   const protein = Math.round(baseWeight * 2);
