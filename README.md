@@ -105,20 +105,4 @@ A full-stack gym management application where **trainers** create fitness progra
 | POST   | `/api/body-metrics`   | Log body metrics         | Member   |
 | GET    | `/api/analytics`      | Get analytics data       | Yes      |
 
-## Deployment
 
-### Frontend (Vercel)
-1. Import repo on [vercel.com](https://vercel.com)
-2. Set **Root Directory** to `frontend`
-3. Add env variable: `REACT_APP_API_URL` = your backend URL + `/api`
-
-### Backend (Render)
-1. Create a new Web Service on [render.com](https://render.com)
-2. Set **Root Directory** to `backend`
-3. **Build Command:** `npm install --prefix ../ && npm install`
-4. **Start Command:** `node server.js`
-5. Add env variables: `MONGO_URI`, `JWT_SECRET`, `PORT`
-
-## License
-
-MIT
